@@ -1,0 +1,2 @@
+# CoreDataApp
+creating, recording, deleting

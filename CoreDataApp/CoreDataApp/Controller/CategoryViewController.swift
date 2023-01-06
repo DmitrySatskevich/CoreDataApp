@@ -74,6 +74,7 @@ class CategoryViewController: UITableViewController {
         if editingStyle == .delete,
            let name = categories[indexPath.row].name
         {
+            // первый вариант создания предиката "name==\(name)"
             let request: NSFetchRequest<CategoryModel> = CategoryModel.fetchRequest()
             request.predicate = NSPredicate(format: "name==\(name)")
             
